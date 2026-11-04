@@ -62,3 +62,111 @@ flowchart TD
     C2b -->|Option 1| E15["E15: A Difficult Reset"]
     C2b -->|Option 2| E16["E16: Burnout and Bills"]
 ```
+
+## Full decision scenes and effects
+
+In all tables, **Eco = Economy**, **Well = Wellbeing**, **Env = Environment**, **Eq = Social Equity**. A plus sign increases a stat; a minus sign decreases it. Effects accumulate over the four choices.
+
+### Decision 1 — Starting choice
+
+#### Scene `START` — How Will You Get to Work?
+
+You recently started a new job across town. You need a reliable commute, but traffic congestion and air pollution are growing problems. You must decide how to travel each day.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **T** | Use public transportation or bike | +4 | -2 | +8 | +2 | `T` |
+| **C** | Drive your own car | -6 | +5 | -8 | -2 | `C` |
+
+**Consequences:**
+
+- **T → `T`:** You save money and reduce emissions, but travel takes longer. A few months later, your local bus route is threatened.
+- **C → `C`:** Driving is convenient and saves time, but fuel and maintenance are expensive. Soon, gas prices rise sharply.
+
+### Decision 2 — Different events based on starting choice
+
+#### Scene `T` — Your Bus Route Is Being Cut
+
+The transit agency announces that your bus route may be discontinued because of low ridership and financial challenges. Several elderly and low-income residents depend on it.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **T1** | Help neighbors petition to save the route | -3 | +3 | +4 | +8 | `T1` |
+| **T2** | Buy a used bike and change your commute | +2 | +2 | +6 | -3 | `T2` |
+
+**Consequences:**
+
+- **T1 → `T1`:** Your petition helps preserve the route. Neighbors later invite you to help during a heatwave.
+- **T2 → `T2`:** You become less dependent on the bus, but a severe storm soon damages your cycling route.
+
+#### Scene `C` — Gas Prices Are Rising
+
+Gas prices jump after supply disruptions. Commuting costs more, and your coworkers are also struggling with transportation expenses.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **C1** | Start carpooling with coworkers | +5 | -1 | +5 | +4 | `C1` |
+| **C2** | Work extra shifts to cover fuel costs | +5 | -7 | -4 | -2 | `C2` |
+
+**Consequences:**
+
+- **C1 → `C1`:** You save money by sharing rides, but one of your carpool partners is soon displaced by flooding.
+- **C2 → `C2`:** Your finances improve, but extra hours leave you exhausted when dangerous summer heat arrives.
+
+### Decision 3 — Four different events
+
+#### Scene `T1` — A Dangerous Heatwave
+
+Because you helped save the bus route, you know several neighbors who depend on transit. During a major heatwave, some struggle to reach cooling centers.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **T1a** | Volunteer at a community cooling center | -3 | +5 | 0 | +8 | `T1a` |
+| **T1b** | Stay home and focus on keeping yourself cool | -3 | +7 | -2 | -1 | `T1b` |
+
+**Consequences:**
+
+- **T1a → `T1a`:** You help residents stay safe, but the cooling center later faces a funding shortage.
+- **T1b → `T1b`:** You protect your own health, but increased electricity use leads to a high utility bill.
+
+#### Scene `T2` — The Flooded Bike Route
+
+Heavy rain floods streets and damages your cycling route. Rainwater carries litter into drains and waterways.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **T2a** | Join volunteers cleaning storm debris | -3 | +2 | +5 | +6 | `T2a` |
+| **T2b** | Buy weatherproof gear and take another route | -6 | +4 | +2 | -2 | `T2b` |
+
+**Consequences:**
+
+- **T2a → `T2a`:** Residents propose rain gardens to reduce future flooding.
+- **T2b → `T2b`:** The detour works at first, but additional road closures disrupt your commute again.
+
+#### Scene `C1` — Your Coworker Loses Their Home
+
+Flooding damages the apartment building where your carpool partner lives. Your coworker must find temporary housing and transportation.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **C1a** | Help evacuate them and transport supplies | -5 | +3 | -2 | +8 | `C1a` |
+| **C1b** | Maintain your regular carpool schedule | +4 | +3 | +2 | -3 | `C1b` |
+
+**Consequences:**
+
+- **C1a → `C1a`:** Your coworker reaches safety, but the emergency shelter lacks supplies and accessible transportation.
+- **C1b → `C1b`:** Your commute remains reliable, but another struggling coworker asks to join the carpool.
+
+#### Scene `C2` — Working Through Extreme Heat
+
+You have worked extra hours to cover driving costs. A severe heatwave makes your job increasingly exhausting.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **C2a** | Ask your employer for safer heat policies | -2 | +5 | +1 | +7 | `C2a` |
+| **C2b** | Keep working overtime despite the heat | +8 | -10 | -3 | -4 | `C2b` |
+
+**Consequences:**
+
+- **C2a → `C2a`:** Your employer introduces breaks but reduces some paid hours. Coworkers consider seeking paid protections.
+- **C2b → `C2b`:** You earn more, but exhaustion leads to a serious health scare.
