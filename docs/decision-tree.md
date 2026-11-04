@@ -170,3 +170,117 @@ You have worked extra hours to cover driving costs. A severe heatwave makes your
 
 - **C2a → `C2a`:** Your employer introduces breaks but reduces some paid hours. Coworkers consider seeking paid protections.
 - **C2b → `C2b`:** You earn more, but exhaustion leads to a serious health scare.
+
+### Decision 4 — Eight different final events
+
+#### Scene `T1a` — Cooling Center Funding Crisis
+
+The community cooling center where you volunteer is running out of funding. Residents still need support.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Help collect donations and distribute free cooling kits | -4 | +3 | +1 | +7 | `E1` |
+| **2** | Personally check on vulnerable neighbors | -2 | +5 | 0 | +3 | `E2` |
+
+**Consequences:**
+
+- **1 → `E1`:** Donation efforts keep essential supplies available.
+- **2 → `E2`:** Your direct support helps individual neighbors, even as the funding problem remains.
+
+#### Scene `T1b` — The Electricity Bill
+
+Your summer utility bill is far higher than expected. You worry about the cost of cooling during future heatwaves.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Improve insulation and use efficient cooling | -4 | +5 | +5 | 0 | `E3` |
+| **2** | Continue relying heavily on air-conditioning | -7 | +6 | -6 | -2 | `E4` |
+
+**Consequences:**
+
+- **1 → `E3`:** Your home becomes more energy-efficient and resilient.
+- **2 → `E4`:** You stay comfortable but face high costs and a larger environmental impact.
+
+#### Scene `T2a` — A Community Rain Garden
+
+After the flood cleanup, neighbors propose transforming part of a damaged public space into a rain garden.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Help build an accessible rain garden for everyone | -4 | +4 | +8 | +7 | `E5` |
+| **2** | Focus on beautifying the area closest to your home | -2 | +4 | +5 | -2 | `E6` |
+
+**Consequences:**
+
+- **1 → `E5`:** The public space becomes greener, safer, and accessible.
+- **2 → `E6`:** Your block becomes greener while others benefit less.
+
+#### Scene `T2b` — Another Transportation Problem
+
+More roadwork closes your cycling detour. You need a dependable alternative.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Start a shared walking and cycling buddy group | +2 | +3 | +6 | +6 | `E7` |
+| **2** | Buy a secondhand gas scooter | -7 | +5 | -6 | -2 | `E8` |
+
+**Consequences:**
+
+- **1 → `E7`:** You and neighbors develop a lower-cost, lower-emission mobility network.
+- **2 → `E8`:** You gain independence but add costs and emissions.
+
+#### Scene `C1a` — The Emergency Shelter
+
+The flood shelter is overcrowded. Some residents cannot easily access food, medicine, or transportation.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Provide additional rides and deliver supplies | -5 | +3 | -3 | +9 | `E9` |
+| **2** | Coordinate donations and available rides online | +1 | +4 | +2 | +7 | `E10` |
+
+**Consequences:**
+
+- **1 → `E9`:** You help flood victims reach essential resources through direct action.
+- **2 → `E10`:** You connect people to helpers while limiting unnecessary travel.
+
+#### Scene `C1b` — A Coworker Needs a Ride
+
+A new coworker cannot afford normal transportation costs and asks to join your carpool.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Offer rides and adjust the route to include them | -4 | +4 | +1 | +8 | `E11` |
+| **2** | Keep the original carpool arrangements | +4 | +2 | +3 | -5 | `E12` |
+
+**Consequences:**
+
+- **1 → `E11`:** You extend affordable transportation to someone who needs it.
+- **2 → `E12`:** The commute is convenient for existing riders, but others are left out.
+
+#### Scene `C2a` — Fighting for Workplace Safety
+
+Your employer has added heat breaks but cut some paid hours. Coworkers are under financial pressure.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Join coworkers requesting paid heat protections | -3 | +3 | 0 | +10 | `E13` |
+| **2** | Find a more flexible job and focus on recovery | -5 | +8 | +1 | 0 | `E14` |
+
+**Consequences:**
+
+- **1 → `E13`:** You advocate for fairer conditions and shared protections.
+- **2 → `E14`:** Your own situation improves while workplace inequities remain.
+
+#### Scene `C2b` — A Serious Health Scare
+
+Weeks of excessive overtime in extreme heat make you ill. You need to reassess your priorities.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Reduce shifts and seek community support | -7 | +10 | +1 | +5 | `E15` |
+| **2** | Continue overtime despite the health risks | +7 | -12 | -2 | -4 | `E16` |
+
+**Consequences:**
+
+- **1 → `E15`:** You prioritize your health at the cost of some income.
+- **2 → `E16`:** Income rises, but your health and quality of life decline.
