@@ -284,3 +284,27 @@ Weeks of excessive overtime in extreme heat make you ill. You need to reassess y
 
 - **1 → `E15`:** You prioritize your health at the cost of some income.
 - **2 → `E16`:** Income rises, but your health and quality of life decline.
+
+## All 16 endings with computed final scores
+
+The final score for each path is calculated as **50 + the effects from all four selected actions**. Endings are tied to the actual path, not to arbitrary score thresholds. This ensures every route has a distinct conclusion.
+
+| Ending | Title | Path | Eco | Well | Env | Eq |
+|---|---|---|---:|---:|---:|---:|
+| **E1** | Community Cooling Network | `START:T → T:T1 → T1:T1a → T1a:1` | 44 | 59 | 63 | 75 |
+| **E2** | A Neighborhood Lifeline | `START:T → T:T1 → T1:T1a → T1a:2` | 46 | 61 | 62 | 71 |
+| **E3** | The Resilient Household | `START:T → T:T1 → T1:T1b → T1b:1` | 44 | 63 | 65 | 59 |
+| **E4** | Comfort at a Cost | `START:T → T:T1 → T1:T1b → T1b:2` | 41 | 64 | 54 | 57 |
+| **E5** | The Shared Green Corridor | `START:T → T:T2 → T2:T2a → T2a:1` | 49 | 56 | 77 | 62 |
+| **E6** | A Greener but Unequal Street | `START:T → T:T2 → T2:T2a → T2a:2` | 51 | 56 | 74 | 53 |
+| **E7** | The Safe Routes Collective | `START:T → T:T2 → T2:T2b → T2b:1` | 52 | 57 | 72 | 53 |
+| **E8** | Independent but Isolated | `START:T → T:T2 → T2:T2b → T2b:2` | 43 | 59 | 60 | 45 |
+| **E9** | The Mutual Aid Driver | `START:C → C:C1 → C1:C1a → C1a:1` | 39 | 60 | 42 | 69 |
+| **E10** | The Flood Relief Network | `START:C → C:C1 → C1:C1a → C1a:2` | 45 | 61 | 47 | 67 |
+| **E11** | The Inclusive Commute | `START:C → C:C1 → C1:C1b → C1b:1` | 49 | 61 | 50 | 57 |
+| **E12** | Efficiency Over Inclusion | `START:C → C:C1 → C1:C1b → C1b:2` | 57 | 59 | 52 | 44 |
+| **E13** | Workplace Heat Advocates | `START:C → C:C2 → C2:C2a → C2a:1` | 44 | 56 | 39 | 63 |
+| **E14** | A Personal Recovery | `START:C → C:C2 → C2:C2a → C2a:2` | 42 | 61 | 40 | 53 |
+| **E15** | A Difficult Reset | `START:C → C:C2 → C2:C2b → C2b:1` | 50 | 48 | 36 | 47 |
+| **E16** | Burnout and Bills | `START:C → C:C2 → C2:C2b → C2b:2` | 64 | 26 | 33 | 38 |
+
