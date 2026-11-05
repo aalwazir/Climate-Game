@@ -308,3 +308,21 @@ The final score for each path is calculated as **50 + the effects from all four 
 | **E15** | A Difficult Reset | `START:C → C:C2 → C2:C2b → C2b:1` | 50 | 48 | 36 | 47 |
 | **E16** | Burnout and Bills | `START:C → C:C2 → C2:C2b → C2b:2` | 64 | 26 | 33 | 38 |
 
+### Ending descriptions
+
+- **E1 — Community Cooling Network:** Your donation efforts keep essential cooling supplies available to vulnerable residents.
+- **E2 — A Neighborhood Lifeline:** Your personal support helps neighbors survive extreme heat, although the wider funding problem remains.
+- **E3 — The Resilient Household:** Efficient cooling improvements reduce energy consumption and make your home better prepared.
+- **E4 — Comfort at a Cost:** You stay comfortable, but energy expenses and environmental impacts increase.
+- **E5 — The Shared Green Corridor:** You help restore nature while making public space safer and more accessible.
+- **E6 — A Greener but Unequal Street:** Your immediate neighborhood improves, but environmental benefits are unevenly distributed.
+- **E7 — The Safe Routes Collective:** You and your neighbors build safer, affordable, low-emission transportation habits.
+- **E8 — Independent but Isolated:** Your scooter improves mobility, but transport costs and emissions increase.
+- **E9 — The Mutual Aid Driver:** Your transportation efforts help flood victims reach safety and supplies.
+- **E10 — The Flood Relief Network:** You connect people to volunteers and resources while avoiding unnecessary driving.
+- **E11 — The Inclusive Commute:** Your carpool provides affordable transportation to more people in your community.
+- **E12 — Efficiency Over Inclusion:** Your commute stays financially convenient, but someone in need is excluded.
+- **E13 — Workplace Heat Advocates:** Your participation helps coworkers demand safer, fairer working conditions.
+- **E14 — A Personal Recovery:** You find healthier work conditions, but the old workplace problems remain unresolved.
+- **E15 — A Difficult Reset:** You give up some income to protect your health and seek community support.
+- **E16 — Burnout and Bills:** Your income improves, but your health and quality of life decline severely.
