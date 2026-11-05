@@ -326,3 +326,18 @@ The final score for each path is calculated as **50 + the effects from all four 
 - **E14 — A Personal Recovery:** You find healthier work conditions, but the old workplace problems remain unresolved.
 - **E15 — A Difficult Reset:** You give up some income to protect your health and seek community support.
 - **E16 — Burnout and Bills:** Your income improves, but your health and quality of life decline severely.
+
+### Design and accessibility considerations
+
+- Visually update the neighborhood or character after important choices (flood debris, heatwave shelters, transportation, parks, utility bills).
+- Show all four meters after each choice, with readable text and symbols in addition to color.
+- Present personal decisions as **trade-offs**, not moral judgments. Options such as driving or using air-conditioning may be necessities depending on ability, safety, transit access, or income.
+- Keep the central message realistic: individual actions can influence personal wellbeing and mutual aid, while large-scale climate change also requires collective and systemic solutions.
+
+## Validation
+
+- 15 playable scenes: `START` + 2 second-stage + 4 third-stage + 8 fourth-stage.
+- 30 choice branches: exactly 2 per playable scene.
+- Exactly 16 terminal ending paths, each four decisions long.
+- Each ending has a separately computed total based on the full path, not just the final decision.
+- Every choice leads to a unique downstream scene in its own branch; no branches reconnect.
