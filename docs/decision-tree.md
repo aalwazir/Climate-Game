@@ -327,6 +327,29 @@ The final score for each path is calculated as **50 + the effects from all four 
 - **E15 — A Difficult Reset:** You give up some income to protect your health and seek community support.
 - **E16 — Burnout and Bills:** Your income improves, but your health and quality of life decline severely.
 
+### Example scene data (JSON)
+
+```json
+{
+  "id": "T",
+  "title": "Your Bus Route Is Being Cut",
+  "description": "Your local bus route may close.",
+  "choices": [
+    {
+      "text": "Help neighbors petition to save the route",
+      "effects": {"economy": -3, "wellbeing": 3, "environment": 4, "socialEquity": 8},
+      "nextScene": "T1"
+    },
+    {
+      "text": "Buy a used bike and change your commute",
+      "effects": {"economy": 2, "wellbeing": 2, "environment": 6, "socialEquity": -3},
+      "nextScene": "T2"
+    }
+  ]
+}
+```
+
+
 ### Design and accessibility considerations
 
 - Visually update the neighborhood or character after important choices (flood debris, heatwave shelters, transportation, parks, utility bills).
