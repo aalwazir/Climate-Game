@@ -1,0 +1,59 @@
+AI Chat Log: AI Policy Generation
+=================================
+Document produced: docs/ai-policy.md
+Tool: Claude Code (model: Claude Opus 5.5)
+Date: 2026-11-09
+Note: Transcript of the conversation used to create the AI policy. Tool
+actions the assistant took are summarized in [brackets].
+
+---------------------------------------------------------------------------
+
+USER:
+can you create an ai policy for this assignment? The policy we are using is
+the following:
+- we only use it for documentation.
+- examples include this exact document, instructions on how to play the
+  game, etc. I will keep it updated as we go.
+
+ASSISTANT:
+[Listed the project folders and previewed the existing files in docs/:
+decision-tree.md, playtesting.md, research-notes.md]
+
+[Created docs/ai-policy.md]
+
+I created the AI policy at `docs/ai-policy.md`, next to the other project
+docs on your `kareem/aiPolicy` branch. Nothing is committed yet.
+
+It includes:
+- Policy: AI is used only for documentation.
+- What counts as documentation: this policy, how-to-play instructions, the
+  README and setup steps, and cleaning up formatting in `docs/`.
+- What AI isn't used for: game code, CSS and tests; the scenes, choices,
+  endings and stat effects in the decision tree; the climate facts in
+  `research-notes.md`; and playtesting results.
+- Responsible use: a teammate reviews every piece of AI-assisted text, and
+  the team owns everything in the repo.
+- Log of AI use: a table so you can keep the policy updated as you go. The
+  first row records this draft, and the "Reviewed by" column is blank for
+  you to fill in.
+
+I added the "not used for" list and the log myself, based on what's in the
+repo; your policy only gave the two bullet points. Remove either one if it
+goes further than you want.
+
+Should I commit it and open a PR to `main`?
+
+---------------------------------------------------------------------------
+
+USER:
+lets also add a folder with .txt files labeled that contain the chat for
+completing hte docs. So for this one export our chat into a .txt and label
+it as aiPolicyGenerationChat.
+
+ASSISTANT:
+[Created docs/ai-chats/aiPolicyGenerationChat.txt (this file)]
+[Updated docs/ai-policy.md to describe the ai-chats folder and link this
+chat log from the AI use log]
+
+Added the `docs/ai-chats/` folder with this transcript, and updated the
+policy so each AI-assisted document gets a matching chat log there.
