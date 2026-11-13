@@ -30,4 +30,40 @@ export const SOURCES = [
       'Wouters, P., van Nimwegen, C., van Oostendorp, H., & van der Spek, E. D. (2013). A meta-analysis of the cognitive and motivational effects of serious games. Journal of Educational Psychology, 105(2), 249–265.',
     url: 'https://doi.org/10.1037/a0031311',
   },
+  {
+    id: 'epaHeatWorkers',
+    citation:
+      'U.S. Environmental Protection Agency. A closer look: Heat-related workplace deaths. Climate Change Indicators.',
+    url: 'https://epa.gov/climate-indicators/closer-look-heat-related-workplace-deaths',
+  },
+  {
+    id: 'crsHeat2026',
+    citation:
+      'Congressional Research Service. (2026, July 30). Extreme heat and climate change (IF12733).',
+    url: 'https://www.everycrsreport.com/files/2026-07-30_IF12733_d37119c92f3ac38b74adefca870eea0a8b8a80df.html',
+  },
+  {
+    id: 'toursClimateJustice',
+    citation:
+      'Université de Tours, FloodJustice project. The quest for equity in the face of environmental challenges (citing UNDP, 2023).',
+    url: 'https://floodjustice.univ-tours.fr/climate-justice/',
+  },
+  {
+    id: 'oxfam2024',
+    citation:
+      'Mbengue, R., & Shideh, F. (2024, November 15). Confronting climate inequality: How it hurts racialized communities. Oxfam Canada.',
+    url: 'https://www.oxfam.ca/story/confronting-climate-inequality-how-it-hurts-racialized-communities',
+  },
+  {
+    id: 'faranda2026',
+    citation:
+      'Faranda, D., Taligrot, L., Yiou, P., & Caud, N. (2026). ClimarisQ: What can we learn from playing a game for climate education? Geoscience Communication, 9, 115.',
+    url: 'https://doi.org/10.5194/gc-9-115-2026',
+  },
+  {
+    id: 'flood2018',
+    citation:
+      'Flood, S., Cradock-Henry, N. A., Blackett, P., & Edwards, P. (2018). Adaptive and interactive climate futures: Systematic review of "serious games" for engagement and decision-making. Environmental Research Letters, 13(6), 063005.',
+    url: 'https://www.ucd.ie/geary/t4media/Flood_2018_Environ._Res._Lett._13_063005.pdf',
+  },
 ];
