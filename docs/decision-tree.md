@@ -40,7 +40,7 @@ flowchart TD
     T1 -->|Volunteer| T1a["T1a: Cooling Center Funding"]
     T1 -->|Stay home| T1b["T1b: Electricity Bill"]
     T2 -->|Cleanup| T2a["T2a: Rain Garden"]
-    T2 -->|Buy weatherproof gear| T2b["T2b: Transport Problems"]
+    T2 -->|Report drains and detour| T2b["T2b: Transport Problems"]
     C1 -->|Help evacuee| C1a["C1a: Emergency Shelter"]
     C1 -->|Keep schedule| C1b["C1b: Coworker Needs a Ride"]
     C2 -->|Request safer work| C2a["C2a: Workplace Safety"]
@@ -101,17 +101,17 @@ The transit agency announces that your bus route may be discontinued because of 
 
 #### Scene `C` — Gas Prices Are Rising
 
-Gas prices jump after supply disruptions. Commuting costs more, and your coworkers are also struggling with transportation expenses.
+A hurricane shuts down Gulf Coast refineries, and gas prices spike. At the same time, wildfire smoke drifts in and the city issues air-quality alerts. Commuting costs more, and your coworkers are also struggling with transportation expenses.
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
 | **C1** | Start carpooling with coworkers | +5 | -1 | +5 | +4 | `C1` |
-| **C2** | Work extra shifts to cover fuel costs | +5 | -7 | -4 | -2 | `C2` |
+| **C2** | Keep driving alone and take extra outdoor shifts to pay for gas | +5 | -7 | -4 | -2 | `C2` |
 
 **Consequences:**
 
 - **C1 → `C1`:** You save money by sharing rides, but one of your carpool partners is soon displaced by flooding.
-- **C2 → `C2`:** Your finances improve, but extra hours leave you exhausted when dangerous summer heat arrives.
+- **C2 → `C2`:** Your finances improve, but long outdoor shifts leave you exhausted when dangerous summer heat arrives.
 
 ### Decision 3 — Four different events
 
@@ -136,12 +136,12 @@ Heavy rain floods streets and damages your cycling route. Rainwater carries litt
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
 | **T2a** | Join volunteers cleaning storm debris | -3 | +2 | +5 | +6 | `T2a` |
-| **T2b** | Buy weatherproof gear and take another route | -6 | +4 | +2 | -2 | `T2b` |
+| **T2b** | Report the clogged storm drains on the city's 311 app and ride a longer detour | -1 | +2 | +3 | +1 | `T2b` |
 
 **Consequences:**
 
 - **T2a → `T2a`:** Residents propose rain gardens to reduce future flooding.
-- **T2b → `T2b`:** The detour works at first, but additional road closures disrupt your commute again.
+- **T2b → `T2b`:** The city clears some drains and the detour works at first, but additional road closures disrupt your commute again.
 
 #### Scene `C1` — Your Coworker Loses Their Home
 
@@ -159,7 +159,7 @@ Flooding damages the apartment building where your carpool partner lives. Your c
 
 #### Scene `C2` — Working Through Extreme Heat
 
-You have worked extra hours to cover driving costs. A severe heatwave makes your job increasingly exhausting.
+You have taken extra outdoor shifts to cover driving costs. A severe heatwave makes your job increasingly exhausting.
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
@@ -179,12 +179,12 @@ The community cooling center where you volunteer is running out of funding. Resi
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
-| **1** | Help collect donations and distribute free cooling kits | -4 | +3 | +1 | +7 | `E1` |
+| **1** | Speak at a city council meeting to ask for cooling center funding, then help hand out cooling kits | -2 | +3 | +1 | +8 | `E1` |
 | **2** | Personally check on vulnerable neighbors | -2 | +5 | 0 | +3 | `E2` |
 
 **Consequences:**
 
-- **1 → `E1`:** Donation efforts keep essential supplies available.
+- **1 → `E1`:** The council approves emergency funding, and the kits keep essential supplies available.
 - **2 → `E2`:** Your direct support helps individual neighbors, even as the funding problem remains.
 
 #### Scene `T1b` — The Electricity Bill
@@ -193,12 +193,12 @@ Your summer utility bill is far higher than expected. You worry about the cost o
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
-| **1** | Improve insulation and use efficient cooling | -4 | +5 | +5 | 0 | `E3` |
+| **1** | Sign up for your utility's free weatherization program and a community solar plan | +3 | +5 | +6 | +1 | `E3` |
 | **2** | Continue relying heavily on air-conditioning | -7 | +6 | -6 | -2 | `E4` |
 
 **Consequences:**
 
-- **1 → `E3`:** Your home becomes more energy-efficient and resilient.
+- **1 → `E3`:** Weatherization and community solar lower your bill and your home's emissions.
 - **2 → `E4`:** You stay comfortable but face high costs and a larger environmental impact.
 
 #### Scene `T2a` — A Community Rain Garden
@@ -245,7 +245,7 @@ The flood shelter is overcrowded. Some residents cannot easily access food, medi
 
 #### Scene `C1b` — A Coworker Needs a Ride
 
-A new coworker cannot afford normal transportation costs and asks to join your carpool.
+A new coworker's car was ruined in the flood, and they cannot afford to replace it. They ask to join your carpool.
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
@@ -291,14 +291,14 @@ The final score for each path is calculated as **50 + the effects from all four 
 
 | Ending | Title | Path | Eco | Well | Env | Eq |
 |---|---|---|---:|---:|---:|---:|
-| **E1** | Community Cooling Network | `START:T → T:T1 → T1:T1a → T1a:1` | 44 | 59 | 63 | 75 |
+| **E1** | Community Cooling Network | `START:T → T:T1 → T1:T1a → T1a:1` | 46 | 59 | 63 | 76 |
 | **E2** | A Neighborhood Lifeline | `START:T → T:T1 → T1:T1a → T1a:2` | 46 | 61 | 62 | 71 |
-| **E3** | The Resilient Household | `START:T → T:T1 → T1:T1b → T1b:1` | 44 | 63 | 65 | 59 |
+| **E3** | The Resilient Household | `START:T → T:T1 → T1:T1b → T1b:1` | 51 | 63 | 66 | 60 |
 | **E4** | Comfort at a Cost | `START:T → T:T1 → T1:T1b → T1b:2` | 41 | 64 | 54 | 57 |
 | **E5** | The Shared Green Corridor | `START:T → T:T2 → T2:T2a → T2a:1` | 49 | 56 | 77 | 62 |
 | **E6** | A Greener but Unequal Street | `START:T → T:T2 → T2:T2a → T2a:2` | 51 | 56 | 74 | 53 |
-| **E7** | The Safe Routes Collective | `START:T → T:T2 → T2:T2b → T2b:1` | 52 | 57 | 72 | 53 |
-| **E8** | Independent but Isolated | `START:T → T:T2 → T2:T2b → T2b:2` | 43 | 59 | 60 | 45 |
+| **E7** | The Safe Routes Collective | `START:T → T:T2 → T2:T2b → T2b:1` | 57 | 55 | 73 | 56 |
+| **E8** | Independent but Isolated | `START:T → T:T2 → T2:T2b → T2b:2` | 48 | 57 | 61 | 48 |
 | **E9** | The Mutual Aid Driver | `START:C → C:C1 → C1:C1a → C1a:1` | 39 | 60 | 42 | 69 |
 | **E10** | The Flood Relief Network | `START:C → C:C1 → C1:C1a → C1a:2` | 45 | 61 | 47 | 67 |
 | **E11** | The Inclusive Commute | `START:C → C:C1 → C1:C1b → C1b:1` | 49 | 61 | 50 | 57 |
@@ -310,9 +310,9 @@ The final score for each path is calculated as **50 + the effects from all four 
 
 ### Ending descriptions
 
-- **E1 — Community Cooling Network:** Your donation efforts keep essential cooling supplies available to vulnerable residents.
+- **E1 — Community Cooling Network:** You speak up at city council and help hand out kits, keeping essential cooling supplies available to vulnerable residents.
 - **E2 — A Neighborhood Lifeline:** Your personal support helps neighbors survive extreme heat, although the wider funding problem remains.
-- **E3 — The Resilient Household:** Efficient cooling improvements reduce energy consumption and make your home better prepared.
+- **E3 — The Resilient Household:** Weatherization and community solar cut your energy use and bills, and make your home better prepared for the next heatwave.
 - **E4 — Comfort at a Cost:** You stay comfortable, but energy expenses and environmental impacts increase.
 - **E5 — The Shared Green Corridor:** You help restore nature while making public space safer and more accessible.
 - **E6 — A Greener but Unequal Street:** Your immediate neighborhood improves, but environmental benefits are unevenly distributed.
