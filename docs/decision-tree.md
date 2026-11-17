@@ -1,17 +1,19 @@
 # Our Choices, Our Future
 
-**Complete individual-action climate change game decision tree**
+**Individual-action climate change game decision tree**
 
-This is a **fully branching** narrative game. The player is an ordinary young adult, not a mayor, president, CEO, or other leader. Every decision is something one person can realistically do. Each choice leads to its own follow-up event, with **no branches merging back together**.
+This is a branching narrative game. The player is an ordinary young adult, not a mayor, president, CEO, or other leader. Every decision is something one person can realistically do.
 
-- **15 unique decision scenes** and **30 total choices**
-- **4 decisions per playthrough**
-- **16 unique endings**
-- **Four stats:** Economy, Wellbeing, Environment, Social Equity
+The tree has two sides, chosen by the first decision:
+
+- **Bike side (left):** redesigned. There is no bus. After you buy a bike, a random event happens, and then you make two more decisions. One path (buying a car) crosses over to the car side.
+- **Car side (right):** still the earlier design. It will be redesigned next.
+
+**Four stats:** Economy, Wellbeing, Environment, Social Equity.
 
 ## Game setup
 
-**Premise.** You are a young adult living in a city experiencing rising living costs, extreme heat, flooding, and unequal access to resources. Your daily choices affect your own future and the people around you.
+**Premise.** You are a young adult living in a city experiencing rising living costs, extreme weather, damaged roads, and unequal access to resources. Your daily choices affect your own future and the people around you.
 
 **Starting stats:** Economy = 50, Wellbeing = 50, Environment = 50, Social Equity = 50. Stat range: 0–100.
 
@@ -24,35 +26,43 @@ This is a **fully branching** narrative game. The player is an ordinary young ad
 
 > **Important:** Stat effects are illustrative game-balance numbers, not quantitative scientific predictions. A positive Social Equity score represents a decision that makes access or benefits more inclusive; it does not mean one person can eliminate structural inequality.
 
-## Complete branching map
+### Scenes, events, and endings
 
-Each line from a scene leads to a **different next scene**. Every path goes through START, one of T/C, one of T1/T2/C1/C2, and one of eight final-decision scenes before reaching its own ending.
+- A **scene** asks the player to choose between two options.
+- An **event** is something that happens to the player. There is no choice: the game picks one outcome at random. Events have no stat effects.
+- An **ending** is the final cinematic for a path. Two paths can share an ending scene (E3 and E6 both show the Bike Ride), but each path keeps its own final scores.
+- A **crossover** sends the player to the other side of the tree instead of an ending (E5).
+
+## Branching map
+
+Solid lines are choices. Dotted lines are random events or crossovers.
 
 ```mermaid
 flowchart TD
     START["START: How Will You Get to Work?"]
-    START -->|Public transit or bike| T["T: Bus Route at Risk"]
+    START -->|Buy a bike| EV{{"Event: something happens on your ride"}}
+    EV -.->|It starts raining| T1["T1: It's Raining"]
+    EV -.->|Bumpy, damaged roads| T2["T2: Popped Tire"]
+    T1 -->|Carpool| T1a["T1a: A Data Center Opens"]
+    T1 -->|Bike to work| T1b["T1b: The Park Is Being Torn Down"]
+    T2 -->|Community protest| T2a["T2a: Fixing the Roads"]
+    T2 -->|No work| T2b["T2b: Fixing the Tire"]
+    T1a -->|Community protest| E1["E1: Data Center Underfunded"]
+    T1a -->|Ignore the news| E2["E2: Storms Are Coming"]
+    T1b -->|Plant trees| E3["E3: Bike Ride"]
+    T1b -->|New park| E4["E4: Family Scene"]
+    T2a -->|Buy a car| E5["E5: Crossover to the car side"]
+    T2a -->|Fix tire| E6["E6: Bike Ride"]
+    T2b -->|Ride the bad roads| E7["E7: Bike Accident"]
+    T2b -->|Fix the roads by hand| E8["E8: Community Get-Together"]
+    E5 -.->|Continues on the car side| C
     START -->|Drive your car| C["C: Rising Fuel Costs"]
-    T -->|Petition for transit| T1["T1: Dangerous Heatwave"]
-    T -->|Buy used bike| T2["T2: Flooded Bike Route"]
     C -->|Carpool| C1["C1: Displaced Coworker"]
     C -->|Work overtime| C2["C2: Working in Extreme Heat"]
-    T1 -->|Volunteer| T1a["T1a: Cooling Center Funding"]
-    T1 -->|Stay home| T1b["T1b: Electricity Bill"]
-    T2 -->|Cleanup| T2a["T2a: Rain Garden"]
-    T2 -->|Report drains and detour| T2b["T2b: Transport Problems"]
     C1 -->|Help evacuee| C1a["C1a: Emergency Shelter"]
     C1 -->|Keep schedule| C1b["C1b: Coworker Needs a Ride"]
     C2 -->|Request safer work| C2a["C2a: Workplace Safety"]
     C2 -->|Continue overtime| C2b["C2b: Health Scare"]
-    T1a -->|Option 1| E1["E1: Community Cooling Network"]
-    T1a -->|Option 2| E2["E2: A Neighborhood Lifeline"]
-    T1b -->|Option 1| E3["E3: The Resilient Household"]
-    T1b -->|Option 2| E4["E4: Comfort at a Cost"]
-    T2a -->|Option 1| E5["E5: The Shared Green Corridor"]
-    T2a -->|Option 2| E6["E6: A Greener but Unequal Street"]
-    T2b -->|Option 1| E7["E7: The Safe Routes Collective"]
-    T2b -->|Option 2| E8["E8: Independent but Isolated"]
     C1a -->|Option 1| E9["E9: The Mutual Aid Driver"]
     C1a -->|Option 2| E10["E10: The Flood Relief Network"]
     C1b -->|Option 1| E11["E11: The Inclusive Commute"]
@@ -63,9 +73,9 @@ flowchart TD
     C2b -->|Option 2| E16["E16: Burnout and Bills"]
 ```
 
-## Full decision scenes and effects
+## Decision scenes and effects
 
-In all tables, **Eco = Economy**, **Well = Wellbeing**, **Env = Environment**, **Eq = Social Equity**. A plus sign increases a stat; a minus sign decreases it. Effects accumulate over the four choices.
+In all tables, **Eco = Economy**, **Well = Wellbeing**, **Env = Environment**, **Eq = Social Equity**. A plus sign increases a stat; a minus sign decreases it. Effects accumulate over the path.
 
 ### Decision 1 — Starting choice
 
@@ -75,29 +85,116 @@ You recently started a new job across town. You need a reliable commute, but tra
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
-| **T** | Use public transportation or bike | +4 | -2 | +8 | +2 | `T` |
+| **B** | Buy a bike | -3 | +3 | +8 | +1 | `EV` (event) |
 | **C** | Drive your own car | -6 | +5 | -8 | -2 | `C` |
 
 **Consequences:**
 
-- **T → `T`:** You save money and reduce emissions, but travel takes longer. A few months later, your local bus route is threatened.
+- **B → `EV`:** Biking is cheap to run and produces no emissions, but you are exposed to the weather and the state of the roads.
 - **C → `C`:** Driving is convenient and saves time, but fuel and maintenance are expensive. Soon, gas prices rise sharply.
 
-### Decision 2 — Different events based on starting choice
+## Bike side (redesigned)
 
-#### Scene `T` — Your Bus Route Is Being Cut
+### Event `EV` — Something Happens on Your Ride
 
-The transit agency announces that your bus route may be discontinued because of low ridership and financial challenges. Several elderly and low-income residents depend on it.
+No choice. The game picks one outcome at random, with equal chances.
+
+| Outcome | What happens | Next |
+|---|---|---|
+| **Rain** | A heavy rainstorm rolls in on your way to work. Storms like this are becoming more frequent and intense as the climate warms. | `T1` |
+| **Bumpy roads** | Holes and bumpy, damaged roads make every ride rough. One day, your tire pops. | `T2` |
+
+### Decision 2
+
+#### Scene `T1` — It's Raining
+
+It's pouring, and you still have to get to work.
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
 |---|---|---:|---:|---:|---:|---|
-| **T1** | Help neighbors petition to save the route | -3 | +3 | +4 | +8 | `T1` |
-| **T2** | Buy a used bike and change your commute | +2 | +2 | +6 | -3 | `T2` |
+| **T1a** | Carpool with a coworker | 0 | +2 | -2 | +3 | `T1a` |
+| **T1b** | Bike to work anyway | +2 | -3 | +5 | 0 | `T1b` |
 
 **Consequences:**
 
-- **T1 → `T1`:** Your petition helps preserve the route. Neighbors later invite you to help during a heatwave.
-- **T2 → `T2`:** You become less dependent on the bus, but a severe storm soon damages your cycling route.
+- **T1a → `T1a`:** You stay dry. On the drive, your coworker mentions that a huge data center is opening on the edge of town.
+- **T1b → `T1b`:** You arrive soaked. On the way, you pass a sign: the city is tearing down the neighborhood park to build apartments.
+
+#### Scene `T2` — Popped Tire
+
+Holes in the road finally pop your bike tire. Neighbors who bike and walk deal with the same damaged roads.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **T2a** | Join a community protest to get the roads fixed | -1 | +1 | +3 | +6 | `T2a` |
+| **T2b** | Skip work for the day | -6 | +1 | 0 | -1 | `T2b` |
+
+**Consequences:**
+
+- **T2a → `T2a`:** The city agrees to repair the roads. Your bike still needs a new tire, though.
+- **T2b → `T2b`:** You lose a day's pay, and your tire is still flat.
+
+### Decision 3
+
+#### Scene `T1a` — A Data Center Opens
+
+A huge data center is opening nearby. It will use enormous amounts of electricity and water, much of the power from fossil fuels.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Join a community protest against the data center | -2 | +2 | +8 | +7 | `E1` |
+| **2** | Ignore the news | +1 | 0 | -7 | -3 | `E2` |
+
+**Consequences:**
+
+- **1 → `E1`:** The protest grows, and the project loses its funding.
+- **2 → `E2`:** The data center opens and runs around the clock.
+
+#### Scene `T1b` — The Park Is Being Torn Down
+
+The city is forcing the neighborhood park to be destroyed to build new apartments. The park's trees keep the area cool and soak up rainwater.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Plant trees and protect what nature you can | -1 | +4 | +7 | +5 | `E3` |
+| **2** | Push for a new park in the building plans | -2 | +6 | +4 | +4 | `E4` |
+
+**Consequences:**
+
+- **1 → `E3`:** New trees line your street and your route to work.
+- **2 → `E4`:** The plans change to include a new park.
+
+#### Scene `T2a` — Fixing the Roads
+
+The city is repairing the roads after the protest, but your bike still has a flat.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Buy a car | -6 | +3 | -7 | -1 | `E5` (crossover) |
+| **2** | Fix your tire and keep biking | -1 | +2 | +4 | +1 | `E6` |
+
+**Consequences:**
+
+- **1 → `E5`:** You buy a car, and the story continues on the car side of the tree.
+- **2 → `E6`:** With a new tire and smooth roads, biking is easy again.
+
+#### Scene `T2b` — Fixing the Tire
+
+You patch the tire, but the roads are still full of holes.
+
+| Choice | Action | Eco | Well | Env | Eq | Next |
+|---|---|---:|---:|---:|---:|---|
+| **1** | Keep riding on the bad roads | +1 | -6 | +2 | 0 | `E7` |
+| **2** | Fix the roads by hand with your neighbors | -1 | +3 | +3 | +7 | `E8` |
+
+**Consequences:**
+
+- **1 → `E7`:** A hidden pothole throws you off your bike.
+- **2 → `E8`:** Neighbors show up with tools, and the street turns into a gathering.
+
+## Car side (earlier design, to be redesigned)
+
+### Decision 2
 
 #### Scene `C` — Gas Prices Are Rising
 
@@ -113,35 +210,7 @@ A hurricane shuts down Gulf Coast refineries, and gas prices spike. At the same 
 - **C1 → `C1`:** You save money by sharing rides, but one of your carpool partners is soon displaced by flooding.
 - **C2 → `C2`:** Your finances improve, but long outdoor shifts leave you exhausted when dangerous summer heat arrives.
 
-### Decision 3 — Four different events
-
-#### Scene `T1` — A Dangerous Heatwave
-
-Because you helped save the bus route, you know several neighbors who depend on transit. During a major heatwave, some struggle to reach cooling centers.
-
-| Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
-| **T1a** | Volunteer at a community cooling center | -3 | +5 | 0 | +8 | `T1a` |
-| **T1b** | Stay home and focus on keeping yourself cool | -3 | +7 | -2 | -1 | `T1b` |
-
-**Consequences:**
-
-- **T1a → `T1a`:** You help residents stay safe, but the cooling center later faces a funding shortage.
-- **T1b → `T1b`:** You protect your own health, but increased electricity use leads to a high utility bill.
-
-#### Scene `T2` — The Flooded Bike Route
-
-Heavy rain floods streets and damages your cycling route. Rainwater carries litter into drains and waterways.
-
-| Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
-| **T2a** | Join volunteers cleaning storm debris | -3 | +2 | +5 | +6 | `T2a` |
-| **T2b** | Report the clogged storm drains on the city's 311 app and ride a longer detour | -1 | +2 | +3 | +1 | `T2b` |
-
-**Consequences:**
-
-- **T2a → `T2a`:** Residents propose rain gardens to reduce future flooding.
-- **T2b → `T2b`:** The city clears some drains and the detour works at first, but additional road closures disrupt your commute again.
+### Decision 3
 
 #### Scene `C1` — Your Coworker Loses Their Home
 
@@ -171,63 +240,7 @@ You have taken extra outdoor shifts to cover driving costs. A severe heatwave ma
 - **C2a → `C2a`:** Your employer introduces breaks but reduces some paid hours. Coworkers consider seeking paid protections.
 - **C2b → `C2b`:** You earn more, but exhaustion leads to a serious health scare.
 
-### Decision 4 — Eight different final events
-
-#### Scene `T1a` — Cooling Center Funding Crisis
-
-The community cooling center where you volunteer is running out of funding. Residents still need support.
-
-| Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
-| **1** | Speak at a city council meeting to ask for cooling center funding, then help hand out cooling kits | -2 | +3 | +1 | +8 | `E1` |
-| **2** | Personally check on vulnerable neighbors | -2 | +5 | 0 | +3 | `E2` |
-
-**Consequences:**
-
-- **1 → `E1`:** The council approves emergency funding, and the kits keep essential supplies available.
-- **2 → `E2`:** Your direct support helps individual neighbors, even as the funding problem remains.
-
-#### Scene `T1b` — The Electricity Bill
-
-Your summer utility bill is far higher than expected. You worry about the cost of cooling during future heatwaves.
-
-| Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
-| **1** | Sign up for your utility's free weatherization program and a community solar plan | +3 | +5 | +6 | +1 | `E3` |
-| **2** | Continue relying heavily on air-conditioning | -7 | +6 | -6 | -2 | `E4` |
-
-**Consequences:**
-
-- **1 → `E3`:** Weatherization and community solar lower your bill and your home's emissions.
-- **2 → `E4`:** You stay comfortable but face high costs and a larger environmental impact.
-
-#### Scene `T2a` — A Community Rain Garden
-
-After the flood cleanup, neighbors propose transforming part of a damaged public space into a rain garden.
-
-| Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
-| **1** | Help build an accessible rain garden for everyone | -4 | +4 | +8 | +7 | `E5` |
-| **2** | Focus on beautifying the area closest to your home | -2 | +4 | +5 | -2 | `E6` |
-
-**Consequences:**
-
-- **1 → `E5`:** The public space becomes greener, safer, and accessible.
-- **2 → `E6`:** Your block becomes greener while others benefit less.
-
-#### Scene `T2b` — Another Transportation Problem
-
-More roadwork closes your cycling detour. You need a dependable alternative.
-
-| Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
-| **1** | Start a shared walking and cycling buddy group | +2 | +3 | +6 | +6 | `E7` |
-| **2** | Buy a secondhand gas scooter | -7 | +5 | -6 | -2 | `E8` |
-
-**Consequences:**
-
-- **1 → `E7`:** You and neighbors develop a lower-cost, lower-emission mobility network.
-- **2 → `E8`:** You gain independence but add costs and emissions.
+### Decision 4
 
 #### Scene `C1a` — The Emergency Shelter
 
@@ -285,20 +298,20 @@ Weeks of excessive overtime in extreme heat make you ill. You need to reassess y
 - **1 → `E15`:** You prioritize your health at the cost of some income.
 - **2 → `E16`:** Income rises, but your health and quality of life decline.
 
-## All 16 endings with computed final scores
+## Endings with computed final scores
 
-The final score for each path is calculated as **50 + the effects from all four selected actions**. Endings are tied to the actual path, not to arbitrary score thresholds. This ensures every route has a distinct conclusion.
+The final score for each path is **50 + the effects from every choice on that path**. Events add nothing. Endings are tied to the path, not to score thresholds.
 
 | Ending | Title | Path | Eco | Well | Env | Eq |
 |---|---|---|---:|---:|---:|---:|
-| **E1** | Community Cooling Network | `START:T → T:T1 → T1:T1a → T1a:1` | 46 | 59 | 63 | 76 |
-| **E2** | A Neighborhood Lifeline | `START:T → T:T1 → T1:T1a → T1a:2` | 46 | 61 | 62 | 71 |
-| **E3** | The Resilient Household | `START:T → T:T1 → T1:T1b → T1b:1` | 51 | 63 | 66 | 60 |
-| **E4** | Comfort at a Cost | `START:T → T:T1 → T1:T1b → T1b:2` | 41 | 64 | 54 | 57 |
-| **E5** | The Shared Green Corridor | `START:T → T:T2 → T2:T2a → T2a:1` | 49 | 56 | 77 | 62 |
-| **E6** | A Greener but Unequal Street | `START:T → T:T2 → T2:T2a → T2a:2` | 51 | 56 | 74 | 53 |
-| **E7** | The Safe Routes Collective | `START:T → T:T2 → T2:T2b → T2b:1` | 57 | 55 | 73 | 56 |
-| **E8** | Independent but Isolated | `START:T → T:T2 → T2:T2b → T2b:2` | 48 | 57 | 61 | 48 |
+| **E1** | Data Center Underfunded | `START:B → EV:Rain → T1:T1a → T1a:1` | 45 | 57 | 64 | 61 |
+| **E2** | Storms Are Coming | `START:B → EV:Rain → T1:T1a → T1a:2` | 48 | 55 | 49 | 51 |
+| **E3** | Bike Ride | `START:B → EV:Rain → T1:T1b → T1b:1` | 48 | 54 | 70 | 56 |
+| **E4** | Family Scene | `START:B → EV:Rain → T1:T1b → T1b:2` | 47 | 56 | 67 | 55 |
+| **E5** | Crossover to the car side | `START:B → EV:Bumpy roads → T2:T2a → T2a:1` | 40 | 57 | 54 | 56 |
+| **E6** | Bike Ride | `START:B → EV:Bumpy roads → T2:T2a → T2a:2` | 45 | 56 | 65 | 58 |
+| **E7** | Bike Accident | `START:B → EV:Bumpy roads → T2:T2b → T2b:1` | 42 | 48 | 60 | 50 |
+| **E8** | Community Get-Together | `START:B → EV:Bumpy roads → T2:T2b → T2b:2` | 40 | 57 | 61 | 57 |
 | **E9** | The Mutual Aid Driver | `START:C → C:C1 → C1:C1a → C1a:1` | 39 | 60 | 42 | 69 |
 | **E10** | The Flood Relief Network | `START:C → C:C1 → C1:C1a → C1a:2` | 45 | 61 | 47 | 67 |
 | **E11** | The Inclusive Commute | `START:C → C:C1 → C1:C1b → C1b:1` | 49 | 61 | 50 | 57 |
@@ -308,16 +321,18 @@ The final score for each path is calculated as **50 + the effects from all four 
 | **E15** | A Difficult Reset | `START:C → C:C2 → C2:C2b → C2b:1` | 50 | 48 | 36 | 47 |
 | **E16** | Burnout and Bills | `START:C → C:C2 → C2:C2b → C2b:2` | 64 | 26 | 33 | 38 |
 
+E5 is not an ending. Its scores carry over as the starting stats on the car side. Where it enters the car side is still to be decided; the map shows `C` as a placeholder.
+
 ### Ending descriptions
 
-- **E1 — Community Cooling Network:** You speak up at city council and help hand out kits, keeping essential cooling supplies available to vulnerable residents.
-- **E2 — A Neighborhood Lifeline:** Your personal support helps neighbors survive extreme heat, although the wider funding problem remains.
-- **E3 — The Resilient Household:** Weatherization and community solar cut your energy use and bills, and make your home better prepared for the next heatwave.
-- **E4 — Comfort at a Cost:** You stay comfortable, but energy expenses and environmental impacts increase.
-- **E5 — The Shared Green Corridor:** You help restore nature while making public space safer and more accessible.
-- **E6 — A Greener but Unequal Street:** Your immediate neighborhood improves, but environmental benefits are unevenly distributed.
-- **E7 — The Safe Routes Collective:** You and your neighbors build safer, affordable, low-emission transportation habits.
-- **E8 — Independent but Isolated:** Your scooter improves mobility, but transport costs and emissions increase.
+- **E1 — Data Center Underfunded:** The protest works. The data center loses its funding, and the town's power and water stay with the people who live there.
+- **E2 — Storms Are Coming:** The data center opens and burns through power day and night. Dark clouds gather as the storms keep getting worse.
+- **E3 — Bike Ride:** A cinematic ride to work through the trees you helped plant.
+- **E4 — Family Scene:** A cinematic scene of your family in the new park, happy and together.
+- **E5 — Crossover:** You buy a car, and the story continues on the car side of the tree.
+- **E6 — Bike Ride:** The same cinematic Bike Ride as E3, this time on the newly repaired roads.
+- **E7 — Bike Accident:** The bad roads cause a crash. You're hurt, and the roads are still dangerous for everyone.
+- **E8 — Community Get-Together:** Fixing the roads together brings the neighborhood closer.
 - **E9 — The Mutual Aid Driver:** Your transportation efforts help flood victims reach safety and supplies.
 - **E10 — The Flood Relief Network:** You connect people to volunteers and resources while avoiding unnecessary driving.
 - **E11 — The Inclusive Commute:** Your carpool provides affordable transportation to more people in your community.
@@ -329,38 +344,55 @@ The final score for each path is calculated as **50 + the effects from all four 
 
 ### Example scene data (JSON)
 
+A choice scene and an event:
+
 ```json
 {
-  "id": "T",
-  "title": "Your Bus Route Is Being Cut",
-  "description": "Your local bus route may close.",
+  "id": "T2",
+  "title": "Popped Tire",
+  "description": "Holes in the road finally pop your bike tire.",
   "choices": [
     {
-      "text": "Help neighbors petition to save the route",
-      "effects": {"economy": -3, "wellbeing": 3, "environment": 4, "socialEquity": 8},
-      "nextScene": "T1"
+      "text": "Join a community protest to get the roads fixed",
+      "effects": {"economy": -1, "wellbeing": 1, "environment": 3, "socialEquity": 6},
+      "nextScene": "T2a"
     },
     {
-      "text": "Buy a used bike and change your commute",
-      "effects": {"economy": 2, "wellbeing": 2, "environment": 6, "socialEquity": -3},
-      "nextScene": "T2"
+      "text": "Skip work for the day",
+      "effects": {"economy": -6, "wellbeing": 1, "environment": 0, "socialEquity": -1},
+      "nextScene": "T2b"
     }
   ]
 }
 ```
 
+```json
+{
+  "id": "EV",
+  "type": "event",
+  "outcomes": [
+    {"text": "A heavy rainstorm rolls in on your way to work.", "weight": 1, "nextScene": "T1"},
+    {"text": "Holes in the road make every ride rough.", "weight": 1, "nextScene": "T2"}
+  ]
+}
+```
 
 ### Design and accessibility considerations
 
-- Visually update the neighborhood or character after important choices (flood debris, heatwave shelters, transportation, parks, utility bills).
+- Visually update the neighborhood or character after important choices (rain, damaged roads, the data center, the park, new trees).
 - Show all four meters after each choice, with readable text and symbols in addition to color.
-- Present personal decisions as **trade-offs**, not moral judgments. Options such as driving or using air-conditioning may be necessities depending on ability, safety, transit access, or income.
+- Present personal decisions as **trade-offs**, not moral judgments. Options such as driving or skipping work may be necessities depending on ability, safety, access, or income.
 - Keep the central message realistic: individual actions can influence personal wellbeing and mutual aid, while large-scale climate change also requires collective and systemic solutions.
 
 ## Validation
 
-- 15 playable scenes: `START` + 2 second-stage + 4 third-stage + 8 fourth-stage.
-- 30 choice branches: exactly 2 per playable scene.
-- Exactly 16 terminal ending paths, each four decisions long.
-- Each ending has a separately computed total based on the full path, not just the final decision.
-- Every choice leads to a unique downstream scene in its own branch; no branches reconnect.
+**Bike side**
+
+- 1 event (`EV`) with 2 equally likely outcomes.
+- 6 choice scenes: `T1`, `T2`, `T1a`, `T1b`, `T2a`, `T2b`, with exactly 2 choices each.
+- 8 paths: 7 reach an ending, and 1 (E5) crosses over to the car side.
+- Every bike path has 3 decisions: `START`, one of `T1`/`T2`, and one final scene.
+
+**Car side**
+
+- Unchanged for now: 7 scenes and 8 endings (E9–E16), each path 4 decisions long.
