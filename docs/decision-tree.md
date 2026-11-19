@@ -1,3 +1,4 @@
+
 # Our Choices, Our Future
 
 **Complete individual-action climate change game decision tree**
@@ -78,6 +79,13 @@ You recently started a new job across town. You need a reliable commute, but tra
 | **T** | Use public transportation or bike | +4 | -2 | +8 | +2 | `T` |
 | **C** | Drive your own car | -6 | +5 | -8 | -2 | `C` |
 
+**Real-world links for each choice:**
+
+- **`T` → `T` — Use public transportation or bike:** [EPA — What You Can Do to Reduce Pollution from Vehicles and Engines](https://www.epa.gov/transportation-air-pollution-and-climate-change/what-you-can-do-reduce-pollution-vehicles-and)  
+  *Useful info.* Explains why biking, walking, and public transit can help reduce transportation pollution.
+- **`C` → `C` — Drive your own car:** [AAA — New Vehicle Ownership Costs (2026)](https://newsroom.aaa.com/2026/09/aaa-new-vehicle-ownership-costs-hit-12863-annually/)  
+  *Useful info.* Breaks down real expenses such as fuel, insurance, maintenance, and owning a car.
+
 **Consequences:**
 
 - **T → `T`:** You save money and reduce emissions, but travel takes longer. A few months later, your local bus route is threatened.
@@ -94,6 +102,13 @@ The transit agency announces that your bus route may be discontinued because of 
 | **T1** | Help neighbors petition to save the route | -3 | +3 | +4 | +8 | `T1` |
 | **T2** | Buy a used bike and change your commute | +2 | +2 | +6 | -3 | `T2` |
 
+**Real-world links for each choice:**
+
+- **`T1` → `T1` — Help neighbors petition to save the route:** [KPBS — South Bay bus line survives campaign to remove it (2024)](https://www.kpbs.org/news/quality-of-life/2024/03/05/just-months-after-launch-south-bay-rapid-bus-line-survives-campaign-to-get-rid-of-it)  
+  *Real example.* Local residents and advocates supported keeping an important bus route; the campaign was about protecting an existing new route, not reversing a budget cut.
+- **`T2` → `T2` — Buy a used bike and change your commute:** [Bicycling — How to Buy a Used Bike](https://www.bicycling.com/bikes-gear/a20008824/how-to-buy-a-used-bike/)  
+  *Useful info.* Gives practical guidance on inspecting and buying a secondhand bike as a travel alternative.
+
 **Consequences:**
 
 - **T1 → `T1`:** Your petition helps preserve the route. Neighbors later invite you to help during a heatwave.
@@ -107,6 +122,13 @@ Gas prices jump after supply disruptions. Commuting costs more, and your coworke
 |---|---|---:|---:|---:|---:|---|
 | **C1** | Start carpooling with coworkers | +5 | -1 | +5 | +4 | `C1` |
 | **C2** | Work extra shifts to cover fuel costs | +5 | -7 | -4 | -2 | `C2` |
+
+**Real-world links for each choice:**
+
+- **`C1` → `C1` — Start carpooling with coworkers:** [U.S. Department of Energy — Ridesharing and Carsharing](https://afdc.energy.gov/conserve/ridesharing)  
+  *Useful info.* Explains how shared rides can reduce fuel costs, parking needs, and traffic.
+- **`C2` → `C2` — Work extra shifts to cover fuel costs:** [CDC/NIOSH — Shiftwork, Long Work Hours, and Fatigue](https://www.cdc.gov/niosh/learning/safetyculturehc/module-2/9.html)  
+  *Useful info.* Provides evidence about exhaustion and health concerns from extended work hours, the trade-off behind earning extra money.
 
 **Consequences:**
 
@@ -124,6 +146,13 @@ Because you helped save the bus route, you know several neighbors who depend on 
 | **T1a** | Volunteer at a community cooling center | -3 | +5 | 0 | +8 | `T1a` |
 | **T1b** | Stay home and focus on keeping yourself cool | -3 | +7 | -2 | -1 | `T1b` |
 
+**Real-world links for each choice:**
+
+- **`T1a` → `T1a` — Volunteer at a community cooling center:** [California Department of Public Health — Cooling Centers Guidance](https://www.cdph.ca.gov/Programs/EPO/Pages/Extreme%20Heat%20Pages/Cooling-Centers-Guidance-7-18-23.aspx)  
+  *Useful info.* Explains how cooling centers work and why access, water, supplies, and transportation matter.
+- **`T1b` → `T1b` — Stay home and focus on keeping yourself cool:** [CDC — About Heat and Your Health](https://www.cdc.gov/extreme-heat/prevention/)  
+  *Useful info.* Gives practical advice for staying safe during extreme heat, including using air conditioning or finding a cooled place.
+
 **Consequences:**
 
 - **T1a → `T1a`:** You help residents stay safe, but the cooling center later faces a funding shortage.
@@ -137,6 +166,13 @@ Heavy rain floods streets and damages your cycling route. Rainwater carries litt
 |---|---|---:|---:|---:|---:|---|
 | **T2a** | Join volunteers cleaning storm debris | -3 | +2 | +5 | +6 | `T2a` |
 | **T2b** | Buy weatherproof gear and take another route | -6 | +4 | +2 | -2 | `T2b` |
+
+**Real-world links for each choice:**
+
+- **`T2a` → `T2a` — Join volunteers cleaning storm debris:** [NBC San Diego — Chula Vista volunteers clean up before heavy rain (2026)](https://www.nbcsandiego.com/news/local/chula-vista-volunteers-clean-up-neighborhood-ahead-of-potential-el-nino-rains/4102103/)  
+  *Real example.* Volunteers removed litter and debris that otherwise could wash into drains and waterways.
+- **`T2b` → `T2b` — Buy weatherproof gear and take another route:** [NHTSA — Bicycle Safety](https://www.nhtsa.gov/road-safety/bicycle-safety)  
+  *Useful info.* Covers visibility, safety equipment, and planning safer bicycle trips when conditions are difficult.
 
 **Consequences:**
 
@@ -152,6 +188,13 @@ Flooding damages the apartment building where your carpool partner lives. Your c
 | **C1a** | Help evacuate them and transport supplies | -5 | +3 | -2 | +8 | `C1a` |
 | **C1b** | Maintain your regular carpool schedule | +4 | +3 | +2 | -3 | `C1b` |
 
+**Real-world links for each choice:**
+
+- **`C1a` → `C1a` — Help evacuate them and transport supplies:** [CDC — Preparing for Floods](https://www.cdc.gov/floods/safety/)  
+  *Useful info.* Covers planning an evacuation and getting to safety. In real emergencies, follow official evacuation instructions and never drive through floodwater.
+- **`C1b` → `C1b` — Maintain your regular carpool schedule:** [U.S. Department of Energy — Workforce Mobility](https://afdc.energy.gov/conserve/workforce-mobility)  
+  *Useful info.* Describes commuting options and employer supports; useful for discussing reliability for current riders versus the needs of people left out.
+
 **Consequences:**
 
 - **C1a → `C1a`:** Your coworker reaches safety, but the emergency shelter lacks supplies and accessible transportation.
@@ -165,6 +208,13 @@ You have worked extra hours to cover driving costs. A severe heatwave makes your
 |---|---|---:|---:|---:|---:|---|
 | **C2a** | Ask your employer for safer heat policies | -2 | +5 | +1 | +7 | `C2a` |
 | **C2b** | Keep working overtime despite the heat | +8 | -10 | -3 | -4 | `C2b` |
+
+**Real-world links for each choice:**
+
+- **`C2a` → `C2a` — Ask your employer for safer heat policies:** [OSHA — Water, Rest, Shade](https://www.osha.gov/heat-exposure/water-rest-shade/)  
+  *Useful info.* Explains common workplace protections against dangerous heat.
+- **`C2b` → `C2b` — Keep working overtime despite the heat:** [CDC/NIOSH — Heat-Related Illnesses](https://www.cdc.gov/niosh/heat-stress/about/illnesses.html)  
+  *Useful info.* Describes heat exhaustion, heat stroke, and why continuing to work while overheated can be dangerous.
 
 **Consequences:**
 
@@ -182,6 +232,13 @@ The community cooling center where you volunteer is running out of funding. Resi
 | **1** | Help collect donations and distribute free cooling kits | -4 | +3 | +1 | +7 | `E1` |
 | **2** | Personally check on vulnerable neighbors | -2 | +5 | 0 | +3 | `E2` |
 
+**Real-world links for each choice:**
+
+- **`1` → `E1` — Help collect donations and distribute free cooling kits:** [Alchemist CDC — Community Cooling Stations](https://alchemistcdc.org/cooling/)  
+  *Real example.* A real community program that raises donations for ice, water, cooling supplies, and pop-up stations.
+- **`2` → `E2` — Personally check on vulnerable neighbors:** [City of San Diego — Extreme Heat Safety](https://www.sandiego.gov/climate-resilient-sd/heat)  
+  *Useful info.* Encourages residents to check on seniors, family, and neighbors during extreme heat.
+
 **Consequences:**
 
 - **1 → `E1`:** Donation efforts keep essential supplies available.
@@ -195,6 +252,13 @@ Your summer utility bill is far higher than expected. You worry about the cost o
 |---|---|---:|---:|---:|---:|---|
 | **1** | Improve insulation and use efficient cooling | -4 | +5 | +5 | 0 | `E3` |
 | **2** | Continue relying heavily on air-conditioning | -7 | +6 | -6 | -2 | `E4` |
+
+**Real-world links for each choice:**
+
+- **`1` → `E3` — Improve insulation and use efficient cooling:** [U.S. Department of Energy — Energy Efficiency for Renters](https://www.energy.gov/save/renters)  
+  *Useful info.* Shows ways to lower energy costs and improve comfort, including options for people who do not own their homes.
+- **`2` → `E4` — Continue relying heavily on air-conditioning:** [U.S. Department of Energy — Home Cooling](https://www.energy.gov/home-cooling)  
+  *Useful info.* Discusses the energy used for cooling and more efficient options. **Important:** Air conditioning can be life-saving during extreme heat; the trade-off is cost and energy use, not whether people deserve to stay safe.
 
 **Consequences:**
 
@@ -210,6 +274,13 @@ After the flood cleanup, neighbors propose transforming part of a damaged public
 | **1** | Help build an accessible rain garden for everyone | -4 | +4 | +8 | +7 | `E5` |
 | **2** | Focus on beautifying the area closest to your home | -2 | +4 | +5 | -2 | `E6` |
 
+**Real-world links for each choice:**
+
+- **`1` → `E5` — Help build an accessible rain garden for everyone:** [EPA — Types of Green Infrastructure](https://www.epa.gov/green-infrastructure/types-green-infrastructure)  
+  *Useful info.* Explains how rain gardens capture runoff. The game can add inclusive paths and seating as its own accessibility design choices.
+- **`2` → `E6` — Focus on beautifying the area closest to your home:** [EPA — Equitable Investment in City Greenspace](https://www.epa.gov/sciencematters/bridging-gap-equitable-investment-city-greenspace)  
+  *Useful info.* Explains why the location of greening projects matters and why benefits may be uneven across neighborhoods.
+
 **Consequences:**
 
 - **1 → `E5`:** The public space becomes greener, safer, and accessible.
@@ -223,6 +294,13 @@ More roadwork closes your cycling detour. You need a dependable alternative.
 |---|---|---:|---:|---:|---:|---|
 | **1** | Start a shared walking and cycling buddy group | +2 | +3 | +6 | +6 | `E7` |
 | **2** | Buy a secondhand gas scooter | -7 | +5 | -6 | -2 | `E8` |
+
+**Real-world links for each choice:**
+
+- **`1` → `E7` — Start a shared walking and cycling buddy group:** [UCLA Transportation — How You Can Build Community by Biking](https://transportation.ucla.edu/blog/how-you-can-build-community-biking)  
+  *Useful info.* Suggests joining or organizing group rides and building relationships through cycling.
+- **`2` → `E8` — Buy a secondhand gas scooter:** [EPA — Air Pollution Rules for Non-Electric Motorcycles](https://www.epa.gov/regulations-emissions-vehicles-and-engines/regulations-smog-soot-and-other-air-pollution-non)  
+  *Useful info.* Explains why gas-powered motorized two-wheelers have exhaust emissions; actual costs and emissions depend on the scooter model.
 
 **Consequences:**
 
@@ -238,6 +316,13 @@ The flood shelter is overcrowded. Some residents cannot easily access food, medi
 | **1** | Provide additional rides and deliver supplies | -5 | +3 | -3 | +9 | `E9` |
 | **2** | Coordinate donations and available rides online | +1 | +4 | +2 | +7 | `E10` |
 
+**Real-world links for each choice:**
+
+- **`1` → `E9` — Provide additional rides and deliver supplies:** [American Red Cross — Flood Relief](https://www.redcross.org/about-us/our-work/disaster-relief/flood-relief.html)  
+  *Real example / useful info.* Shows real flood-response work, including shelters and distributing cleanup supplies. Coordinate help with responders rather than entering unsafe flood zones.
+- **`2` → `E10` — Coordinate donations and available rides online:** [Nieman Lab — How Recovers.org Organized Local Disaster Relief](https://www.niemanlab.org/2012/06/recovers-org-builds-a-platform-to-structure-data-to-improve-local-diaster-relief/)  
+  *Real example.* Describes an online tool built to match disaster survivors, volunteers, and donors with local needs.
+
 **Consequences:**
 
 - **1 → `E9`:** You help flood victims reach essential resources through direct action.
@@ -251,6 +336,13 @@ A new coworker cannot afford normal transportation costs and asks to join your c
 |---|---|---:|---:|---:|---:|---|
 | **1** | Offer rides and adjust the route to include them | -4 | +4 | +1 | +8 | `E11` |
 | **2** | Keep the original carpool arrangements | +4 | +2 | +3 | -5 | `E12` |
+
+**Real-world links for each choice:**
+
+- **`1` → `E11` — Offer rides and adjust the route to include them:** [PennDOT — Car and Van Pooling](https://www.pa.gov/agencies/penndot/traveling-in-pa/ridesharing/car-and-van-pooling)  
+  *Useful info.* Gives practical steps for sharing a commute, including planning routes, schedules, and riding responsibilities when someone joins.
+- **`2` → `E12` — Keep the original carpool arrangements:** [Federal Highway Administration — Traveler Choices and Carpooling](https://ops.fhwa.dot.gov/publications/mitig_traf_cong/traveler_choices.htm)  
+  *Useful info.* Describes typical carpools among coworkers following similar routes. Keeping the original route can be simpler for current riders, while the game highlights that it may leave someone without a ride.
 
 **Consequences:**
 
@@ -266,6 +358,13 @@ Your employer has added heat breaks but cut some paid hours. Coworkers are under
 | **1** | Join coworkers requesting paid heat protections | -3 | +3 | 0 | +10 | `E13` |
 | **2** | Find a more flexible job and focus on recovery | -5 | +8 | +1 | 0 | `E14` |
 
+**Real-world links for each choice:**
+
+- **`1` → `E13` — Join coworkers requesting paid heat protections:** [OSHA — Worker Rights and Protections](https://www.osha.gov/workers)  
+  *Useful info.* Covers how workers can report workplace hazards and advocate for safer conditions. Rules about paid breaks vary by jurisdiction and job.
+- **`2` → `E14` — Find a more flexible job and focus on recovery:** [CDC/NIOSH — Work Scheduling and Fatigue Prevention](https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod5/14.html)  
+  *Useful info.* Discusses shorter shifts, flexible scheduling, recovery time, and reducing excessive overtime. The resource is aimed at healthcare workplaces but the principles illustrate the choice.
+
 **Consequences:**
 
 - **1 → `E13`:** You advocate for fairer conditions and shared protections.
@@ -279,6 +378,13 @@ Weeks of excessive overtime in extreme heat make you ill. You need to reassess y
 |---|---|---:|---:|---:|---:|---|
 | **1** | Reduce shifts and seek community support | -7 | +10 | +1 | +5 | `E15` |
 | **2** | Continue overtime despite the health risks | +7 | -12 | -2 | -4 | `E16` |
+
+**Real-world links for each choice:**
+
+- **`1` → `E15` — Reduce shifts and seek community support:** [United Way 211 — Healthcare Expenses and Support](https://211.org/get-help/healthcare-expenses)  
+  *Useful info.* Helps people find local resources for medical expenses, prescriptions, and transport to appointments; cutting work hours can also reduce income.
+- **`2` → `E16` — Continue overtime despite the health risks:** [CDC/NIOSH — Fatigue and Work](https://www.cdc.gov/niosh/fatigue/about/index.html)  
+  *Useful info.* Describes the safety and health risks of long shifts, hot work environments, and insufficient recovery.
 
 **Consequences:**
 
@@ -348,7 +454,6 @@ The final score for each path is calculated as **50 + the effects from all four 
   ]
 }
 ```
-
 
 ### Design and accessibility considerations
 
