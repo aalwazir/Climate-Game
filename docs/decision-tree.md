@@ -1,3 +1,4 @@
+
 # Our Choices, Our Future
 
 **Individual-action climate change game decision tree**
@@ -88,6 +89,13 @@ You recently started a new job across town. You need a reliable commute, but tra
 | **B** | Buy a bike | -3 | +3 | +8 | +1 | `EV` (event) |
 | **C** | Drive your own car | -6 | +5 | -8 | -2 | `CEV` (event) |
 
+**Real-world links for each choice:**
+
+- **B — Buy a bike:** [EPA — What You Can Do About Climate Change: Transportation](https://www.epa.gov/climate-change/what-you-can-do-about-climate-change-transportation)  
+  *Useful guide.* Explains how biking instead of driving can reduce transportation emissions.
+- **C — Drive your own car:** [AAA — New Vehicle Ownership Costs (2026)](https://newsroom.acg.aaa.com/aaa-new-vehicle-ownership-costs-hit-12863-annually/)  
+  *Useful guide.* Shows the real costs of owning and using a car, including fuel, insurance, and repairs.
+
 **Consequences:**
 
 - **B → `EV`:** Biking is cheap to run and produces no emissions, but you are exposed to the weather and the state of the roads.
@@ -115,6 +123,13 @@ It's pouring, and you still have to get to work.
 | **T1a** | Carpool with a coworker | 0 | +2 | -2 | +3 | `T1a` |
 | **T1b** | Bike to work anyway | +2 | -3 | +5 | 0 | `T1b` |
 
+**Real-world links for each choice:**
+
+- **T1a — Carpool with a coworker:** [U.S. Department of Energy — Ridesharing and Carsharing](https://afdc.energy.gov/conserve/ridesharing)  
+  *Useful guide.* Explains how coworkers can share rides and transportation costs.
+- **T1b — Bike to work anyway:** [Cycling UK — A Beginner’s Guide to Cycling in the Rain](https://www.cyclinguk.org/article/beginners-guide-cycling-rain)  
+  *Useful guide.* Offers tips for riding in rain and explains why wet roads need extra care.
+
 **Consequences:**
 
 - **T1a → `T1a`:** You stay dry. On the drive, your coworker mentions that a huge data center is opening on the edge of town.
@@ -128,6 +143,13 @@ Holes in the road finally pop your bike tire. Neighbors who bike and walk deal w
 |---|---|---:|---:|---:|---:|---|
 | **T2a** | Join a community protest to get the roads fixed | -1 | +1 | +3 | +6 | `T2a` |
 | **T2b** | Skip work for the day | -6 | +1 | 0 | -1 | `T2b` |
+
+**Real-world links for each choice:**
+
+- **T2a — Join a community protest to get the roads fixed:** [City of San Diego — Pavement Management Plan](https://www.sandiego.gov/transportation/programs/pavement-management-plan)  
+  *Useful guide.* Shows how residents can learn about road conditions and advocate for repairs through local government.
+- **T2b — Skip work for the day:** [U.S. Department of Labor — Leave Benefits](https://www.dol.gov/general/topic/benefits-leave)  
+  *Useful guide.* Explains that time off may be paid or unpaid depending on the employer, rules, and circumstances.
 
 **Consequences:**
 
@@ -145,6 +167,13 @@ A huge data center is opening nearby. It will use enormous amounts of electricit
 | **1** | Join a community protest against the data center | -2 | +2 | +8 | +7 | `E1` |
 | **2** | Ignore the news | +1 | 0 | -7 | -3 | `E2` |
 
+**Real-world links for each choice:**
+
+- **1 — Join a community protest against the data center:** [Texas Tribune — Rural Texans Question Data Center Water Use (2025)](https://www.texastribune.org/2025/10/02/rural-texas-data-centers-water/)  
+  *Real-world example.* Describes residents organizing against proposed data centers because of water, energy, and other local impacts.
+- **2 — Ignore the news:** [U.S. Department of Energy — Data Center Resource Hub](https://www.energy.gov/powering-americas-ai-future-data-center-resource-hub)  
+  *Useful information.* Explains growing electricity demand from data centers, even when residents are not involved in local decisions.
+
 **Consequences:**
 
 - **1 → `E1`:** The protest grows, and the project loses its funding.
@@ -158,6 +187,13 @@ The city is forcing the neighborhood park to be destroyed to build new apartment
 |---|---|---:|---:|---:|---:|---|
 | **1** | Plant trees and protect what nature you can | -1 | +4 | +7 | +5 | `E3` |
 | **2** | Push for a new park in the building plans | -2 | +6 | +4 | +4 | `E4` |
+
+**Real-world links for each choice:**
+
+- **1 — Plant trees and protect what nature you can:** [EPA — Benefits of Trees and Vegetation](https://www.epa.gov/heatislands/benefits-trees-and-vegetation)  
+  *Useful information.* Explains how trees cool streets and provide environmental benefits.
+- **2 — Push for a new park in the building plans:** [Seattle Housing Authority — NewHolly Redevelopment](https://www.seattlehousing.org/about-us/redevelopment/newholly-redevelopment)  
+  *Real-world example.* Shows a housing redevelopment that included parks, playgrounds, and shared open spaces.
 
 **Consequences:**
 
@@ -173,6 +209,13 @@ The city is repairing the roads after the protest, but your bike still has a fla
 | **1** | Buy a car | -6 | +3 | -7 | -1 | `E5` (crossover) |
 | **2** | Fix your tire and keep biking | -1 | +2 | +4 | +1 | `E6` |
 
+**Real-world links for each choice:**
+
+- **1 — Buy a car:** [FTC — Buying a Used Car From a Dealer](https://consumer.ftc.gov/articles/buying-used-car-dealer)  
+  *Useful guide.* Covers the practical costs and checks involved when switching from cycling to car ownership.
+- **2 — Fix your tire and keep biking:** [REI — How to Fix a Flat Bike Tire](https://www.rei.com/learn/expert-advice/flat-tire.html)  
+  *How-to guide.* Shows how to repair or replace a bike tube so the player can keep cycling.
+
 **Consequences:**
 
 - **1 → `E5`:** You buy a car, and the story continues on the car side of the tree.
@@ -186,6 +229,13 @@ You patch the tire, but the roads are still full of holes.
 |---|---|---:|---:|---:|---:|---|
 | **1** | Keep riding on the bad roads | +1 | -6 | +2 | 0 | `E7` |
 | **2** | Fix the roads by hand with your neighbors | -1 | +3 | +3 | +7 | `E8` |
+
+**Real-world links for each choice:**
+
+- **1 — Keep riding on the bad roads:** [NHTSA — Bicycle Safety](https://www.nhtsa.gov/road-safety/bicycle-safety)  
+  *Safety information.* Warns cyclists to look out for potholes and other hazards that can cause crashes.
+- **2 — Fix the roads by hand with your neighbors:** [LAist — Compton Residents Fix Potholes Themselves (2024)](https://laist.com/news/transportation/compton-pothole-repair-diy-guerilla-alex-daisy-de-la-rosa)  
+  *Real-world example and caution.* Residents tried community pothole repairs, but officials said roadway repairs should be done by authorized professionals; real projects need permission and safety measures.
 
 **Consequences:**
 
@@ -210,9 +260,16 @@ No choice. The game picks one outcome at random, with equal chances. Players who
 Filling your tank now costs far more, and your coworkers are struggling with the same costs.
 
 | Choice | Action | Eco | Well | Env | Eq | Next |
-|---|---|---:|---:|---:|---:|---|
+|---|---|---:|---:|---:|---:|---:|---|
 | **C1a** | Start a carpool with coworkers | +5 | -1 | +5 | +4 | `C1a` |
 | **C1b** | Pick up extra shifts to pay for gas | +4 | -6 | -2 | -1 | `C1b` |
+
+**Real-world links for each choice:**
+
+- **C1a — Start a carpool with coworkers:** [U.S. Department of Energy — Ridesharing and Carsharing](https://afdc.energy.gov/conserve/ridesharing)  
+  *Useful guide.* Explains how carpools can spread fuel costs across several people.
+- **C1b — Pick up extra shifts to pay for gas:** [CDC/NIOSH — Fatigue and Work](https://www.cdc.gov/niosh/fatigue/about/index.html)  
+  *Health information.* Explains how long work hours and fatigue can affect health and safety.
 
 **Consequences:**
 
@@ -227,6 +284,13 @@ The sky is hazy, and the air smells like smoke. The city asks people to stay off
 |---|---|---:|---:|---:|---:|---|
 | **C2a** | Work from home on alert days | 0 | +3 | +5 | +1 | `C2a` |
 | **C2b** | Drive in anyway | +1 | -3 | -5 | -1 | `C2b` |
+
+**Real-world links for each choice:**
+
+- **C2a — Work from home on alert days:** [U.S. Department of Energy — Workforce Mobility](https://afdc.energy.gov/conserve/workforce-mobility)  
+  *Useful guide.* Describes telework as one way to avoid commuting trips when working from home is possible.
+- **C2b — Drive in anyway:** [AirNow — When Smoke Is in the Air](https://smoke.airnow.gov/wildfires/when-smoke-is-in-the-air/)  
+  *Safety information.* Explains why people should limit exposure during smoke alerts and plan activities around air quality.
 
 **Consequences:**
 
@@ -244,6 +308,13 @@ The utility plans to expand the gas power plant near your neighborhood. Resident
 | **1** | Join the community protest against the expansion | -2 | +2 | +8 | +7 | `E9` |
 | **2** | Ignore it | +1 | -1 | -7 | -3 | `E10` |
 
+**Real-world links for each choice:**
+
+- **1 — Join the community protest against the expansion:** [CBS 58 — Residents Oppose Proposed Gas Power Plant (2025)](https://www.cbs58.com/news/we-energies-plan-for-2-billion-natural-gas-plant-faces-criticism-at-public-hearing)  
+  *Real-world example.* Documents community opposition and public testimony about a proposed natural-gas power plant.
+- **2 — Ignore it:** [EPA — Power Plants and Neighboring Communities](https://www.epa.gov/power-sector/power-plants-and-neighboring-communities)  
+  *Useful information.* Explains how power-plant pollution can affect nearby and downwind neighborhoods.
+
 **Consequences:**
 
 - **1 → `E9`:** The protest grows, and the utility drops the expansion.
@@ -257,6 +328,13 @@ The extra shifts have left you exhausted, and your old car needs a costly repair
 |---|---|---:|---:|---:|---:|---|
 | **1** | Trade it in for a used hybrid | -5 | +3 | +6 | 0 | `E11` |
 | **2** | Keep patching the old car | -3 | -5 | -4 | 0 | `E12` |
+
+**Real-world links for each choice:**
+
+- **1 — Trade it in for a used hybrid:** [U.S. Department of Energy — Hybrid Electric Vehicles](https://afdc.energy.gov/vehicles/electric-basics-hev)  
+  *Useful guide.* Explains how hybrid cars use a gas engine and electric motor to improve fuel efficiency.
+- **2 — Keep patching the old car:** [AAA — Essential Car Repair and Maintenance Tips](https://www.acg.aaa.com/connect/automotive/car-maintenance)  
+  *Useful guide.* Explains why delayed repairs and maintenance can lead to bigger costs or breakdowns.
 
 **Consequences:**
 
@@ -272,6 +350,13 @@ Home on smog days, you notice your street has almost no shade and heats up fast.
 | **1** | Organize a tree planting with your neighbors | -1 | +4 | +7 | +6 | `E13` |
 | **2** | Buy an air purifier and stay inside | -4 | +2 | -1 | -2 | `E14` |
 
+**Real-world links for each choice:**
+
+- **1 — Organize a tree planting with your neighbors:** [EPA — Urban Street Trees and Green Infrastructure](https://www.epa.gov/water-research/urban-street-trees-and-green-infrastructure)  
+  *Useful information.* Explains why tree planting can help cool neighborhoods and manage stormwater.
+- **2 — Buy an air purifier and stay inside:** [EPA — Guide to Air Cleaners in the Home](https://www.epa.gov/indoor-air-quality-iaq/guide-air-cleaners-home)  
+  *Useful guide.* Explains how properly selected portable air cleaners can reduce indoor particles, including smoke.
+
 **Consequences:**
 
 - **1 → `E13`:** Neighbors show up with shovels and young trees.
@@ -285,6 +370,13 @@ Traffic barely moves. The city is deciding whether to widen the highway or build
 |---|---|---:|---:|---:|---:|---|
 | **1** | Speak at the city meeting for protected bike lanes | -1 | +3 | +7 | +6 | `E15` |
 | **2** | Keep driving and wait it out | +2 | -4 | -6 | -2 | `E16` |
+
+**Real-world links for each choice:**
+
+- **1 — Speak at the city meeting for protected bike lanes:** [Federal Highway Administration — Separated Bike Lanes Make Roads Safer](https://www.fhwa.dot.gov/innovation/innovator/issue101/page_02.html)  
+  *Research and example.* Describes how protected bike lanes can improve safety and why cities build them.
+- **2 — Keep driving and wait it out:** [UC Davis — Increasing Highway Capacity Is Unlikely to Relieve Congestion](https://ncst.ucdavis.edu/research-product/increasing-highway-capacity-unlikely-relieve-traffic-congestion)  
+  *Research.* Explains induced demand: widened roads often attract more driving and can fill up again.
 
 **Consequences:**
 
